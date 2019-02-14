@@ -57,7 +57,7 @@ For step6 segmentation, original image is on [here](http://andrewjanowczyk.com/w
 
 ## References  
 [1][python version of [3]](https://github.com/ai-lab-circle/deep_tutorial_python)   
-[2] https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/slim
+[2] https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/slim   
 [3][original source](https://github.com/choosehappy/public/tree/master/DL%20tutorial%20Code)   
 
 

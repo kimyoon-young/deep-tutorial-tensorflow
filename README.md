@@ -9,18 +9,20 @@ We used tensorflow-slim and implemented on ubuntu 16.04, python3.5, and tensorfl
 python3.5  
 tensorflow
 
-Current version ran on CPU. So chagne below code if want to run on GPU and install tensorflow-gpu version.
+Current version ran on CPU. if want to run on GPU and install tensorflow-gpu version and chagne below code.
 
 ```bash
    cd DEEP_TUTORIAL_ROOT
    gedit step4_train_image_classifier.py
 
+   ------------------------------------------------------
    tf.app.flags.DEFINE_boolean('clone_on_cpu', True,
                             'Use CPUs to deploy clones.')
    change to 
 
    tf.app.flags.DEFINE_boolean('clone_on_cpu', False,
                             'Use CPUs to deploy clones.')
+   -----------------------------------------------------
 
 ```
 
@@ -73,7 +75,7 @@ For step6 segmentation, original image is on [here](http://andrewjanowczyk.com/w
 
 ## References  
 [1][python version of [3]](https://github.com/ai-lab-circle/deep_tutorial_python)   
-[2] https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/slim   
+[2]https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/slim   
 [3][original source](https://github.com/choosehappy/public/tree/master/DL%20tutorial%20Code)   
 
 

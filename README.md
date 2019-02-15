@@ -1,12 +1,28 @@
 # Nucleui segmentation-tensorflow (in progress)
   
 This source is tensorflow version of [1].   
-We used tensorflow-slim and implemented on ubuntu 16.04, python3.5, and tensorflow1.13.0rc1.
+We used tensorflow-slim and implemented on ubuntu 16.04, python3.5, and tensorflow1.13.0rc1.  
+
+
 
 ## Requirments
 python3.5  
 tensorflow
 
+Current version ran on CPU. So chagne below code if want to run on GPU and install tensorflow-gpu version.
+
+```bash
+   cd DEEP_TUTORIAL_ROOT
+   gedit step4_train_image_classifier.py
+
+   tf.app.flags.DEFINE_boolean('clone_on_cpu', True,
+                            'Use CPUs to deploy clones.')
+   change to 
+
+   tf.app.flags.DEFINE_boolean('clone_on_cpu', False,
+                            'Use CPUs to deploy clones.')
+
+```
 
 ## Overview  
 ### Quick start
